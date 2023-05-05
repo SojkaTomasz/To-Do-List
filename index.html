@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/f5a70fd252.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="to-do">
+			<div class="header">
+				<h1><i class="fa-solid fa-list-check"></i> Lista zadań</h1>
+				<input
+					type="text"
+					class="to-do-input"
+					placeholder="Wpisz treść zadania..."
+				/>
+				<button class="add-btn">Add</button>
+			</div>
+			<div class="to-do-list">
+				<h3>zadania</h3>
+				<p class="info-error">Brak zadań na liście.</p>
+				<ul></ul>
+			</div>
+		</div>
+		<div class="pop-up">
+			<h3>Edytuj zadanie</h3>
+			<div class="pop-up-body">
+				<p class="pop-up-info"></p>
+				<input
+					type="text"
+					class="pop-up-input"
+					placeholder="Wprowadź nową treść zadania..."
+				/>
+				<button class="pop-up-btn accept">Zatwierdź</button>
+				<button class="pop-up-btn cancel">Anuluj</button>
+			</div>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
