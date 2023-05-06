@@ -14,10 +14,13 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 30px;
+  padding-top: 20px;
   height: 100vh;
   font-family: "Andika", sans-serif;
-  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  background-color: #330000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .fas {
@@ -36,40 +39,42 @@ body {
 }
 .to-do .header h1 {
   color: var(--light);
-  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Bangers", cursive;
 }
 .to-do .header .to-do-input {
-  width: 80%;
   padding: 10px 20px;
+  width: 80%;
   margin: 0 20px;
-  border: none;
   border-radius: 5px;
+  border: none;
   color: var(--light-dark);
   background-color: var(--light);
 }
 .to-do .header .add-btn {
-  padding: 10px 22px;
   border: none;
+  padding: 10px 22px;
   border-radius: 5px;
-  color: var(--deep-dark);
   background-color: var(--light);
+  color: var(--deep-dark);
   text-transform: uppercase;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
   margin-top: 10px;
+  transition: color 0.3s, background-color 0.3s;
 }
 .to-do .header .add-btn:hover {
-  color: #fff;
   background-color: rgba(0, 0, 0, 0.3098039216);
+  color: #fff;
 }
 .to-do .to-do-list {
   padding: 10px 5px;
-  background-color: #fff;
   border-radius: 0 0 40px 10px;
+  background-color: #fff;
 }
 .to-do .to-do-list h3 {
-  text-transform: uppercase;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .to-do .to-do-list .info-error {
   margin-top: 5px;
@@ -77,27 +82,27 @@ body {
 }
 .to-do .to-do-list li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 15px;
   padding-left: 20px;
-  text-align: left;
   list-style: none;
+  text-align: left;
   background-color: var(--light);
 }
 
 .pop-up {
   display: none;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   position: fixed;
-  bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  bottom: 10px;
   width: 800px;
+  transform: translateX(-50%);
   color: var(--light);
-  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-color: rgba(0, 0, 0, 0.7607843137);
   border-radius: 40px 10px 40px 10px;
 }
 .pop-up h3 {
@@ -106,38 +111,38 @@ body {
 }
 .pop-up .pop-up-body {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
 }
 .pop-up .pop-up-body .pop-up-info {
-  color: var(--light);
   margin-bottom: 10px;
+  color: var(--light);
 }
 .pop-up .pop-up-body .pop-up-input {
   width: 100%;
   padding: 10px 20px;
-  border: none;
   border-radius: 5px;
-  color: var(--light-dark);
+  border: none;
   background-color: var(--light);
+  color: var(--light-dark);
 }
 .pop-up .pop-up-body .pop-up-btn {
-  width: 30%;
   display: inline-block;
+  width: 30%;
   padding: 10px 22px;
   margin: 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   color: var(--deep-dark);
   background-color: var(--light);
-  text-transform: uppercase;
+  transition: color 0.5s, background-color 0.5s;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
 }
 .pop-up .pop-up-body .pop-up-btn:hover {
+  background-color: #900a4a;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.137254902);
 }
 
 .tools {
@@ -147,15 +152,15 @@ body {
   padding: 15px 10px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 .tools button:hover {
   background-color: #ddd;
 }
 .tools .edit {
   font-weight: bold;
-  color: #0f7add;
+  color: #0686fd;
 }
 .tools .delete {
   color: tomato;
@@ -167,7 +172,27 @@ body {
 
 .completed {
   font-size: 12px;
-  color: var(--light-dark);
   text-decoration: line-through;
   font-style: italic;
+  color: var(--light-dark);
+}
+
+span {
+  color: white;
+  position: fixed;
+}
+
+.author {
+  bottom: 5px;
+  right: 10px;
+  font-size: 12px;
+  z-index: -1;
+}
+
+.name {
+  bottom: 15px;
+  right: 10px;
+  font-family: "Corinthia", cursive;
+  font-size: 35px;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
